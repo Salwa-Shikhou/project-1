@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    color: rgb(188, 188, 188);
+    font-size: 12px;
+}
+
+#HOME {
+    height: 645px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/banner.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+#HOME nav {
+    width: 100%;
+    height: 65px;
+    padding: 0px 55px;
+}
+
+#HOME nav .logo {
+    width: 80px;
+    height: 30px;
+}
+
+#HOME nav .logo img {
+    width: 100%;
+}
+
+#HOME nav ul {
+    width: 355px;
+    height: 50px;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 701;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#HOME nav ul a {
+    text-decoration: none;
+    display: inline-block;
+    width: 66px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#HOME nav ul li:hover {
+    border-bottom: 2px solid #f44336;
+}
+
+#HOME .hero {
+    width: 100%;
+    height: calc(785px - 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px
+}
+
+#HOME .hero h1 {
+    font-size: 60px;
+}
+
+#HOME .hero button {
+    width: 150px;
+    height: 35px;
+    font-size: 10px;
+    background-color: transparent;
+    border: 1px solid #eee;
+}
+
+#HOME .hero button:hover {
+    background-color: #f44336;
+    border: 1px solid #f44336;
+}
+
+#COURSE {
+    height: 475px;
+}
+
+#COURSE .title {
+    height: 70px;
+    margin-top: 40px;
+}
+
+
+#COURSE .all {
+    width: 885px;
+    height: 225px;
+}
+
+#COURSE .all .courses-info {
+    width: 275px;
+    height: 100%;
+    background-color: #fff3f3;
+    text-align: center;
+    padding: 20px 22px;
+}
+
+#COURSE .all .courses-info p {
+    line-height: 18px;
+}
+
+#campuses {
+    height: 585px;
+    background-color: #eee;
+}
+
+#campuses .locations {
+    width: 885px;
+    height: 395px;
+}
+
+#campuses .locations .Campus-london {
+    background-image: url(../images/london.png);
+}
+
+#campuses .locations .Campus-newyork {
+    background-image: url(../images/newyork.png);
+}
+
+#campuses .locations .Campus-washington {
+    background-image: url(../images/washington.png);
+}
+
+#campuses .locations .Campus-london,
+#campuses .locations .Campus-newyork,
+#campuses .locations .Campus-washington {
+    width: 275px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.Cam-style {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f44336;
+    border: 1px solid #f44336;
+    border-radius: 7px;
+    opacity: 0;
+}
+
+#campuses .locations .Campus-london .Cam-style p,
+#campuses .locations .Campus-newyork .Cam-style p,
+#campuses .locations .Campus-washington .Cam-style p {
+    font-size: 22px;
+}
+
+.Cam-style:hover {
+    opacity: 0.8;
+}
+
+#campuses .locations .Campus-london .Cam-style p:hover,
+#campuses .locations .Campus-newyork .Cam-style p:hover,
+#campuses .locations .Campus-washington .Cam-style p:hover {
+    opacity: 1;
+}
+
+#all-facilities {
+    height: 580px;
+}
+
+#all-facilities .facilities-info {
+    margin-top: 45px;
+}
+
+#all-facilities .Facilities {
+    width: 885px;
+    height: 385px;
+}
+
+#all-facilities .Facilities .place-des {
+    width: 275px;
+    height: 100%;
+}
+
+#all-facilities .Facilities .place-des .fac-img {
+    width: 100%;
+    height: 260px;
+}
+
+#all-facilities .Facilities .place-des p {
+    padding-bottom: 40px;
+}
+
+
+#all-facilities .Facilities .place-des .fac-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#BLOG {
+    height: 400px;
+    background-color: #eee;
+}
+
+#BOLG .blog-info {
+    padding-top: 35px;
+}
+
+#BLOG .feedbacks {
+    width: 885px;
+    height: 180px;
+}
+
+#BLOG .feedbacks .fed1,
+#BLOG .feedbacks .fed2 {
+    width: 400px;
+    height: 100%;
+    background-color: #fff3f3;
+}
+
+#BLOG .feedbacks .person-img {
+    width: 275px;
+    height: 100%;
+    padding-top: 20px;
+}
+
+#BLOG .feedbacks .person-img .img {
+    width: 35px;
+    height: 35px;
+    margin: auto;
+}
+
+#BLOG .feedbacks .person-img .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#BLOG .feedbacks .fed-detailes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 22px;
+    padding: 20px 10px 20px 0px;
+}
+
+#BLOG .feedbacks .fed-detailes .icon {
+    width: 125px;
+    height: 35px;
+    align-items: center;
+}
+
+#CONTACT {
+    height: 460px;
+}
+
+#CONTACT .container {
+    width: 885px;
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner2.jpg);
+    background-size: 100%;
+    padding: 65px 125px;
+
+}
+
+#CONTACT .container .info {
+    height: 200px;
+}
+
+#CONTACT .container .info p {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+#CONTACT .container .info button {
+    width: 132px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #eee;
+}
+
+#CONTACT .container .info button:hover {
+    background-color: #f44336;
+    border: 1px solid #f44336;
+}
+
+footer {
+    height: 230px;
+    background-color: #eee;
+}
+
+footer .icons {
+    width: 100px;
+    height: 10px;
+}
+
+#HOME,
+#COURSE,
+#campuses,
+#all-facilities,
+#BLOG,
+#CONTACT,
+footer {
+    width: 100%;
+}
+
+#HOME,
+#all-facilities .Facilities .place-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#HOME nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#COURSE .title h1,
+#campuses .campus-info h1,
+#all-facilities .facilities-info h1,
+#BLOG .blog-info h1 {
+    font-size: 30px;
+}
+
+#CONTACT,
+#campuses .locations .Campus-london .Cam-style,
+#campuses .locations .Campus-newyork .Cam-style,
+#campuses .locations .Campus-washington .Cam-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#COURSE .all,
+#campuses .locations,
+#all-facilities .Facilities,
+#BLOG .feedbacks,
+#BLOG .feedbacks .fed1,
+#BLOG .feedbacks .fed2,
+#BLOG .feedbacks .fed-detailes .icon,
+footer .icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#COURSE,
+#COURSE .all .courses-info,
+#campuses,
+#BLOG,
+#CONTACT .container .info,
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#all-facilities,
+#CONTACT .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i {
+    color: #f44336;
+}
+
+#campuses,
+#COURSE,
+#HOME .hero,
+#all-facilities .facilities-info,
+#BLOG .blog-info,
+#CONTACT .container,
+footer {
+    text-align: center;
+}
+
+
+#COURSE .all .courses-info,
+#campuses .locations .Campus-london,
+#campuses .locations .Campus-newyork,
+#campuses .locations .Campus-washington,
+#all-facilities .Facilities .place-des .fac-img img,
+#BLOG .feedbacks .fed1,
+#BLOG .feedbacks .fed2,
+#CONTACT .container {
+    border-radius: 7px;
+}
+
+#HOME nav .logo,
+#HOME nav ul a,
+#HOME .hero button,
+#campuses .locations .Campus-london,
+#campuses .locations .Campus-newyork,
+#campuses .locations .Campus-washington,
+#CONTACT .container .info button,
+footer .icons {
+    cursor: pointer;
+}
+
+#COURSE .title,
+#campuses .campus-info,
+#all-facilities .facilities-info,
+#BLOG .blog-info {
+    line-height: 35px;
+}
+
+#HOME .hero h1,
+#HOME .hero p,
+#HOME nav ul a,
+#HOME .hero button,
+#campuses .locations .Campus-london p,
+#campuses .locations .Campus-newyork p,
+#campuses .locations .Campus-washington p,
+#CONTACT .container .info p,
+#CONTACT .container .info button {
+    color: #eee;
+}
